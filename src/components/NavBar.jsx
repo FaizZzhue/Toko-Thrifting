@@ -16,8 +16,8 @@ export const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <nav className="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-sm z-50 border-b border-gray-100 shadow-sm">
-            <div className="w-full container mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 md:h-20 h-16"> 
+        <nav className="fixed top-3 left-50 right-50 bg-white/90 backdrop-blur-sm z-50 border-b rounded-xl border-gray-100 shadow-sm">
+            <div className="w-full container mx-auto flex items-center justify-between px-4 sm:px-1 lg:px-2 md:h-20 h-16"> 
                 
                 {/* Logo Nav */}    
                 <div className="flex items-center gap-1 cursor-pointer">

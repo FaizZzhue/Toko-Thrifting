@@ -4,6 +4,8 @@
     --color-primary: hsl(var(--primary));
     --color-link: hsl(var(--link));
 
+    --color-vintage: hsl(var(--vintage));
+
     --animate-fade-in: fade-in 0.7s ease-out forwards;
     --animate-fade-in-delay-1: fade-in 0.7s ease-out 0.2s forwards;
     --animate-fade-in-delay-2: fade-in 0.7s ease-out 0.4s forwards;
@@ -47,6 +49,7 @@
     :root {
         --primary: 	25 30% 25%;
         --link: 20 90% 55%;
+        --vintage: 40 51% 75%;
     }
 
     * {
@@ -67,6 +70,6 @@
 
 @utility click-button {
     @apply px-6 py-2 rounded-full bg-primary text-white font-medium 
-            transition-all duration-300 hover:shadow-[0_0_10px_rgba(139,92,246,0.5)]
+            transition-all duration-300 hover:shadow-[0_0_10px_rgba(234,95,16,0.5)]
             hover:scale-105 active:scale-95;
 }
