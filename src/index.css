@@ -1,1 +1,49 @@
 @import "tailwindcss";
+
+@theme {
+    --color-primary: hsl(var(--primary));
+    --color-link: hsl(var(--link));
+}
+
+@utility container {
+    margin-inline: auto;
+    padding-inline: 2rem;
+
+    @media (width >= 640px) {
+        max-width: 640px;
+    }
+    @media (width >= 768px) {
+        max-width: 768px;
+    }
+    @media (width >= 1024px) {
+        max-width: 1024px;
+    }
+    @media (width >= 1280px) {
+        max-width: 1280px;
+    }
+    @media (width >= 1400px) {
+        max-width: 1400px;
+    }
+}
+
+@layer base {
+    :root {
+        --primary: 	25 30% 25%;
+        --link: 20 90% 55%;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        @apply scroll-smooth;
+        font-family: "Inter", sans-serif;
+    }
+
+    body {
+        @apply bg-slate-100;
+    }
+}
