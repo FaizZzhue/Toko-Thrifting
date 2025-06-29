@@ -16,7 +16,7 @@ export const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <nav className="fixed top-3 left-50 right-50 bg-white/90 backdrop-blur-sm z-50 border-b rounded-xl border-gray-100 shadow-sm">
+        <nav className="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-sm border-b border-gray-100 shadow-sm z-50 rounded-xl">
             <div className="w-full container mx-auto flex items-center justify-between px-4 sm:px-1 lg:px-2 md:h-20 h-16"> 
                 
                 {/* Logo Nav */}    
@@ -45,7 +45,7 @@ export const Navbar = () => {
                             key={key} 
                             href={item.href} 
                             onClick={() => setActiveItems(item.href)}
-                            className={`text-sm hover:text-primary font-medium relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-link after:transition-all
+                            className={` hover:text-link font-medium relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-link after:transition-all
                                 ${ActiveItems === item.href 
                                     ? "text-link after:w-full" 
                                     : ""
@@ -58,8 +58,8 @@ export const Navbar = () => {
                 </div>
 
                 {/* Button Nav */}
-                <button className="hidden md:block bg-primary text-white px-6 py-2.5 rounded-lg hover:bg-link text-sm font-medium transition-all hover:shadow-lg hover:shadow-primary">
-                    <a href=""> Get in touch</a>
+                <button className="hidden md:block bg-primary text-white px-6 py-2.5 rounded-full hover:bg-link text-sm font-medium transition-all hover:shadow-[0_0_10px_rgba(234,95,16,0.5)] hover:scale-105 active:scale-95y">
+                    <a href=""> Login</a>
                 </button>
 
             </div>
@@ -79,8 +79,8 @@ export const Navbar = () => {
                                 {item.name}
                             </a>
                         ))}
-                        <button className="w-full bg-primary text-white px-6 py-2.5 rounded-lg hover:bg-link text-sm font-medium transition-all hover:shadow-lg hover:shadow-primary">
-                            <a href=""> Get in touch</a>
+                        <button className="w-full bg-primary text-white px-6 py-2.5 rounded-lg hover:bg-link text-sm font-medium transition-all hover:shadow-[0_0_10px_rgba(234,95,16,0.5)] hover:scale-105 active:scale-95y">
+                            <a href=""> Login</a>
                         </button>
                     </div>
                 </div>

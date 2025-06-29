@@ -24,6 +24,7 @@
     }
 }
 
+
 @utility container {
     margin-inline: auto;
     padding-inline: 2rem;
@@ -63,9 +64,7 @@
         font-family: "Inter", sans-serif;
     }
 
-    body {
-        @apply bg-slate-100;
-    }
+    body {}
 }
 
 @utility click-button {
