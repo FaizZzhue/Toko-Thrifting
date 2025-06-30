@@ -54,7 +54,7 @@ export const HeroSection = () => {
                             )}
                         </div>
 
-                        <a href="#Product" className="click-button hover:bg-link">
+                        <a href="#Product" className="click-button ">
                             →
                         </a>
                     </div>
