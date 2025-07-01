@@ -1,18 +1,20 @@
+import { FeaturesSection } from "../components/FeaturesSection";
 import { HeroSection } from "../components/HeroSection";
 import { Navbar } from "../components/NavBar";
 import { ProductLogo } from "../components/ProductLogo";
+import { PurposeSection } from "../components/PurposeSection";
 
 export const Home = () => {
     return (
         <main className="relative min-h-screen overflow-x-hidden">
-            <div className="absolute inset-0 flex justify-center items-center  -z-10">
-                <div className="w-[500px] h-[500px] bg-gradient-to-br from-[#8B4513]/50 to-orange-400/20 rounded-full blur-[100px]"/>
-            </div>
+            <div className="absolute inset-0 left-1/2 transform -translate-x-1/2 w-[500px] h-[500px] bg-gradient-to-br from-[#8B4513]/50 to-orange-400/20 rounded-full blur-[100px] -z-10" />
             <div className="overflow-hidden">
                 <Navbar />
                 <div>
                     <HeroSection />
                     <ProductLogo />
+                    <PurposeSection />
+                    <FeaturesSection />
                 </div>
             </div>
         </main>

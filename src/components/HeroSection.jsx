@@ -24,10 +24,10 @@ export const HeroSection = () => {
                         </span>
                     </h1>
                     <div className="container flex items-center gap-2 w-fit px-4 py-2 rounded-full hover:bg-slate-100 transition-colors cursor-pointer animate-fade-in group">
-                        <span className="text-sm text-primary font-medium">
+                        <span className="text-sm text-primary font-medium hover:text-black">
                             Find your dream item
                         </span>
-                        <button className="text-lg text-primary cursor-pointer">
+                        <button className="text-lg text-primary cursor-pointer hover:text-black">
                             <FiArrowRight />
                         </button>
                     </div>

@@ -1,11 +1,11 @@
-import adidas from "../assets/adidas-logo.png"
-import asics from "../assets/asics-logo.jpg"
-import carhartt from "../assets/Carhartt-Logo.png"
-import stussy from "../assets/Logo-Stussy.png"
-import nike from "../assets/nike-logo.jpg"
-import tnf from "../assets/png-logo.png"
-import puma from "../assets/puma-black-logo.png"
-import stone from "../assets/stone_island-logo.png"
+import adidas from "../assets/adidas-logo.png";
+import asics from "../assets/asics-logo.jpg";
+import carhartt from "../assets/Carhartt-Logo.png";
+import stussy from "../assets/Logo-Stussy.png";
+import nike from "../assets/nike-logo.jpg";
+import tnf from "../assets/png-logo.png";
+import puma from "../assets/puma-black-logo.png";
+import stone from "../assets/stone_island-logo.png";
 
 export const ProductLogo = () => {
     const logos = [adidas, asics, carhartt, stussy, nike, tnf, puma, stone]
