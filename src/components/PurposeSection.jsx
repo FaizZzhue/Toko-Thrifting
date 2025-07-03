@@ -20,7 +20,7 @@ export const PurposeSection = () => {
                 <div className="grid md:grid-cols-3 grid-cols-1 gap-8">
                     {/* Heading Text */}
                     <div className="">
-                        <p className="text-sm text-link font-medium mb-2">ACHIEVE MORE</p>
+                        <p className="text-sm text-link font-medium mb-2"> ACHIEVE MORE</p>
                         <h2 className="text-3xl md:w-4/5 w-full md:text-4xl font-bold text-gray-900"> The purpose of the convoy is to market products</h2>
                     </div>
                     {/* Bullet Point */}
