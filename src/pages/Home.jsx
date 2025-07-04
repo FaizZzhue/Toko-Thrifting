@@ -1,9 +1,9 @@
-import { FeaturesSection } from "../components/FeaturesSection";
-import { HeroSection } from "../components/HeroSection";
+import { FeaturesSection } from "../components/home/FeaturesSection";
+import { HeroSection } from "../components/home/HeroSection";
 import { Navbar } from "../components/NavBar";
-import { ProductLogo } from "../components/ProductLogo";
-import { ProductSection } from "../components/ProductSection";
-import { PurposeSection } from "../components/PurposeSection";
+import { ProductLogo } from "../components/home/ProductLogo";
+import { ProductSection } from "../components/home/ProductSection";
+import { PurposeSection } from "../components/home/PurposeSection";
 
 export const Home = () => {
     return (

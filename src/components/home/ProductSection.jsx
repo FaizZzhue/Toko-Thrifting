@@ -1,8 +1,8 @@
-import Img1 from "../assets/product/Shoes.jpeg";
-import Img2 from "../assets/product/Shirt.jpeg";
-import Img3 from "../assets/product/Cap.jpeg";
-import Img4 from "../assets/product/Camo.jpeg";
-import Img5 from "../assets/product/Jacket.jpeg";
+import Img1 from "../../assets/product/Shoes.jpeg";
+import Img2 from "../../assets/product/Shirt.jpeg";
+import Img3 from "../../assets/product/Cap.jpeg";
+import Img4 from "../../assets/product/Camo.jpeg";
+import Img5 from "../../assets/product/Jacket.jpeg";
 import { FiStar } from "react-icons/fi";
 
 
@@ -55,9 +55,12 @@ export const ProductSection = () => {
 
                 {/* Header */}
                 <div className="text-center mb-10 max-w-[600px] mx-auto">
-                    <p className="text-link text-sm"> Top Selling Best Products </p>
-                    <h1 className="text-3xl font-bold"> Product</h1>
-                    <p className="text-xs text-gray-400"> Best of the best products</p>
+                    <p className="text-3xl font-bold mb-4"> 
+                        Top Selling 
+                        <span className="text-link"> Best </span>
+                        <span className="text-primary"> Products</span> 
+                    </p>
+                    <p className=" text-gray-600"> Best of the best products</p>
                 </div>
 
                 {/* Body */}

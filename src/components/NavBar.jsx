@@ -2,13 +2,14 @@ import { useState } from "react";
 import logo from "../assets/Logo.png";
 import { cn } from "@/lib/utils";
 import { HiMenu, HiX } from "react-icons/hi";
+import { NavLink } from "react-router-dom";
 
 const navItems = [
-    { name: "Home", href:"#Hero"},
-    { name: "About Us", href:"#About"},
-    { name: "Product", href:"#Product"},
-    { name: "Review", href:"#Review"},
-    { name: "Contact Us", href:"#Contact"},
+    { name: "Home", href:"/Hero"},
+    { name: "About Us", href:"/About"},
+    { name: "Product", href:"/Product"},
+    { name: "Review", href:"/Review"},
+    { name: "Contact Us", href:"/Contact"},
 ];
 
 export const Navbar = () => {
@@ -41,9 +42,9 @@ export const Navbar = () => {
                 {/* Dekstop Nav */}
                 <div className="hidden md:flex items-center gap-10">
                     {navItems.map((item, key) => (
-                        <a 
-                            key={key} 
-                            href={item.href} 
+                        <NavLink 
+                            to={item.href}
+                            key={key}  
                             onClick={() => setActiveItems(item.href)}
                             className={` hover:text-link font-medium relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-link after:transition-all
                                 ${ActiveItems === item.href 
@@ -53,7 +54,7 @@ export const Navbar = () => {
                             }
                         >   
                             {item.name}
-                        </a>
+                        </NavLink>
                     ))}
                 </div>
 
@@ -67,9 +68,9 @@ export const Navbar = () => {
                 <div className="md:hidden bg-white border-t border-gray-100 py-4">
                     <div className="container mx-auto px-4 space-y-4">
                         {navItems.map((item, key) => (
-                            <a 
+                            <NavLink 
                                 key={key}
-                                href={item.href}
+                                to={item.href}
                                 onClick={() => {
                                     setActiveItems(item.href);
                                     setIsMenuOpen(false);
@@ -77,7 +78,7 @@ export const Navbar = () => {
                                 className={`block text-sm font-medium py-2 ${ActiveItems === item.href ? "text-link" : ""}`}
                             >
                                 {item.name}
-                            </a>
+                            </NavLink>
                         ))}
                         <button className="w-full bg-primary text-white px-6 py-2.5 rounded-lg hover:bg-link text-sm font-medium transition-all hover:shadow-[0_0_10px_rgba(234,95,16,0.5)] hover:scale-105 active:scale-95y">
                             <a href=""> Login</a>
