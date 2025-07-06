@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import logo from "../assets/Logo.png";
 import { cn } from "@/lib/utils";
 import { HiMenu, HiX } from "react-icons/hi";
@@ -15,9 +15,23 @@ const navItems = [
 export const Navbar = () => {
     const [ActiveItems, setActiveItems] = useState("#Hero");
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 10)
+        }
+        window.addEventListener("scroll", handleScroll)
+        return () => window.removeEventListener("scroll", handleScroll)
+    }, [])
 
     return (
-        <nav className="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-sm border-b border-gray-100 shadow-sm z-50 rounded-xl">
+        <nav 
+            className={cn(
+                "fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-sm border-b border-gray-100 shadow-sm z-50 rounded-xl", 
+                isScrolled ? "text-primary" : "text-black"
+            )}
+        >
             <div className="w-full container mx-auto flex items-center justify-between px-4 sm:px-1 lg:px-2 md:h-20 h-16"> 
                 
                 {/* Logo Nav */}    
@@ -45,7 +59,13 @@ export const Navbar = () => {
                         <NavLink 
                             to={item.href}
                             key={key}  
-                            onClick={() => setActiveItems(item.href)}
+                            onClick={() => {
+                                if (window.location.pathname === item.href) {
+                                    window.scrollTo({top: 0, behavior: 'smooth'});
+                                }
+                                setActiveItems(item.href);
+                                setIsMenuOpen(false);
+                            }}
                             className={` hover:text-link font-medium relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-link after:transition-all
                                 ${ActiveItems === item.href 
                                     ? "text-link after:w-full" 
@@ -72,6 +92,9 @@ export const Navbar = () => {
                                 key={key}
                                 to={item.href}
                                 onClick={() => {
+                                    if (window.location.pathname === item.href) {
+                                        window.scrollTo({top: 0, behavior: 'smooth'});
+                                    }
                                     setActiveItems(item.href);
                                     setIsMenuOpen(false);
                                 }}

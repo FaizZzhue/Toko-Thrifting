@@ -11,11 +11,13 @@ import { Product } from "./pages/Product";
 import { Review } from "./pages/Review";
 import { Contact } from "./pages/Contact";
 import { Footer } from "./components/Footer";
+import { ScrollToTop } from "./components/ScrollToTop";
 
 function App() {
   return (
     <>
       <BrowserRouter>
+        <ScrollToTop />
         <Navbar />
         <Routes>
           <Route path="/Hero" element={<Home />} />
