@@ -10,6 +10,7 @@ import { About } from "./pages/About";
 import { Product } from "./pages/Product";
 import { Review } from "./pages/Review";
 import { Contact } from "./pages/Contact";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/Contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   )

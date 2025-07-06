@@ -1,4 +1,4 @@
-import bgAbout from "../../assets/bg-hero.jpg"
+import bgAbout from "../../assets/bg-hero.jpg";
 
 export const AboutSection = () => {
     return (

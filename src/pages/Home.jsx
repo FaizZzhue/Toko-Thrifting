@@ -1,6 +1,5 @@
 import { FeaturesSection } from "../components/home/FeaturesSection";
 import { HeroSection } from "../components/home/HeroSection";
-import { Navbar } from "../components/NavBar";
 import { ProductLogo } from "../components/home/ProductLogo";
 import { ProductSection } from "../components/home/ProductSection";
 import { PurposeSection } from "../components/home/PurposeSection";
