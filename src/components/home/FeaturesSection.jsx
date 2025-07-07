@@ -51,13 +51,13 @@ export const FeaturesSection = () => {
                 ))}
             </div>
 
-            {/* Features Button */}
+            {/* Features Button
             <div className="text-center mt-12">
                 <button className="click-button relative">
                     Start Your Shop
                     <div className="absolute -z-10 w-full h-full rounded-full bg-amber-600/50 blur-xl top-0 left-0"></div>
                 </button>
-            </div>
+            </div> */}
         </section>
     )
 }

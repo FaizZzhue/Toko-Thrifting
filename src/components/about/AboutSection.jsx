@@ -11,7 +11,7 @@ export const AboutSection = () => {
                 />
 
                 <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center bg-black/50">
-                    <h1 className="text-white text-4xl font-bold"> About Thrift Heaven</h1>
+                    <h1 className="text-white text-4xl font-bold animate-fade-in"> About Thrift Heaven</h1>
                 </div>
 
             </div>

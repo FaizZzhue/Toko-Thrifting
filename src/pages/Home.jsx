@@ -1,5 +1,6 @@
 import { FeaturesSection } from "../components/home/FeaturesSection";
 import { HeroSection } from "../components/home/HeroSection";
+import { NewsLatterSection } from "../components/home/NewsLatterSection";
 import { ProductLogo } from "../components/home/ProductLogo";
 import { ProductSection } from "../components/home/ProductSection";
 import { PurposeSection } from "../components/home/PurposeSection";
@@ -15,6 +16,7 @@ export const Home = () => {
                     <PurposeSection />
                     <FeaturesSection />
                     <ProductSection />
+                    <NewsLatterSection />
                 </div>
             </div>
         </main>

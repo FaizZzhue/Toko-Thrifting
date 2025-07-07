@@ -1,3 +1,4 @@
+import { FiFacebook, FiInstagram, FiMap, FiPhone, FiTwitter } from "react-icons/fi";
 import logo from "../assets/Logo-preview.png";
 
 export const Footer = () => {
@@ -6,11 +7,6 @@ export const Footer = () => {
             { name: "FAQ", href: "#"},
             { name: "Email", href: "#"},
             { name: "Support 24", href: "#"},
-        ],
-        review: [
-            { name: "Rating", href: "#"},
-            { name: "Testimonials", href: "#"},
-            { name: "Quick Answer", href: "#"},
         ],
         product: [
             { name: "Best Product", href: "#"},
@@ -40,13 +36,9 @@ export const Footer = () => {
                             <h1 className="text-link font-bold text-xl">Stay Updated</h1>
                             <p className="text-lg text-white md:w-3/4">Sign up for our newsletter to get updated product info</p>
                         </div>
-                        <div className="text-gray-500 md:w-3/4">
-                            <input
-                                type="text"
-                                placeholder="Email Address"
-                                className="w-full pl-5 pr-30 py-2 bg-gray-100 rounded focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary transition-all"
-                            />
-                        </div>
+                        <button className="click-button bg-link w-1/3 rounded-sm">
+                            Login
+                        </button>
                     </div>
                     <div className="lg:col-span-8">
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -72,10 +64,52 @@ export const Footer = () => {
                                     </ul>
                                 </div>
                             ))}
+                            <div className="text-white uppercase text-lg font-medium">
+                                <h3 className="mb-4">Find Us</h3>
+                                <div className="flex gap-7">
+                                    <a 
+                                        href="https://facebook.com"
+                                        rel="noopener noreferrer"
+                                        className="inline-block"
+                                    >
+                                        <FiFacebook className="text-link text-2xl hover:-translate-y-1 transition-transform duration-300"/>
+                                    </a>
+                                    <a 
+                                        href="https://instagram.com"
+                                        rel="noopener noreferrer"
+                                        className="inline-block"
+                                    >
+                                        <FiInstagram className="text-link text-2xl hover:-translate-y-1 transition-transform duration-300"/>
+                                    </a>
+                                    <a 
+                                        href="https://twitter.com"
+                                        rel="noopener noreferrer"
+                                        className="inline-block"
+                                    >
+                                        <FiTwitter className="text-link text-2xl hover:-translate-y-1 transition-transform duration-300"/>
+                                    </a>
+                                </div>
+                                <div className="mt-8 flex gap-10 pl-5">
+                                    <a
+                                        href="https://www.google.com/maps"
+                                        rel="noopener noreferrer"
+                                        className="inline-block"
+                                    >
+                                        <FiMap className="text-link text-2xl hover:-translate-y-1 transition-transform duration-300"/>
+                                    </a>
+                                    <a
+                                        href="https://whatsapp.com"
+                                        rel="noopener noreferrer"
+                                        className="inline-block"
+                                    >
+                                        <FiPhone className="text-link text-2xl hover:-translate-y-1 transition-transform duration-300"/>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div className="border-t border-gray-200 mt-12 pt-8">
+                <div className="border-t border-gray-200 mt-5 pt-3">
                     <div className="flex flex-col md:flex-row justify-between items-center gap-4">
                         <p className="text-white/50 text-sm"> &copy; {new Date().getFullYear()} Thrift Heaven. All rights reserved.</p>
                         <p className="text-sm text-white/50">Created by  

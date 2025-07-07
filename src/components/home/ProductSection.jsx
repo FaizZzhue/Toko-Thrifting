@@ -1,8 +1,8 @@
-import Img1 from "../../assets/product/Shoes.jpeg";
+import Img1 from "../../assets/product/Shoes.png";
 import Img2 from "../../assets/product/Shirt.jpeg";
 import Img3 from "../../assets/product/Cap.jpeg";
 import Img4 from "../../assets/product/Camo.jpeg";
-import Img5 from "../../assets/product/Jacket.jpeg";
+import Img5 from "../../assets/product/Jacket.png";
 import { FiStar } from "react-icons/fi";
 
 
@@ -66,11 +66,13 @@ export const ProductSection = () => {
                 {/* Body */}
                 <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 place-items-center gap-5">
                     {productData.map((product) => (
-                        <div>
+                        <div
+                            key={product.id}
+                        >
                             <img
                                 src={product.img}
                                 alt=""
-                                className="h-[200px] w-[200px] object-cover rounded-md"
+                                className="h-[200px] w-[200px] object-contain rounded-md"
                             />
                             <div>
                                 <h3 className="font-semibold">{product.title}</h3>
