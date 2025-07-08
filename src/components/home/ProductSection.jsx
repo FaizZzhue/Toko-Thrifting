@@ -72,7 +72,7 @@ export const ProductSection = () => {
                             <img
                                 src={product.img}
                                 alt=""
-                                className="h-[200px] w-[200px] object-contain rounded-md"
+                                className="h-[200px] w-[200px] object-contain border border-link rounded-md"
                             />
                             <div>
                                 <h3 className="font-semibold">{product.title}</h3>

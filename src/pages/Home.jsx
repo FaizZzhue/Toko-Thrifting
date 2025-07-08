@@ -4,6 +4,7 @@ import { NewsLatterSection } from "../components/home/NewsLatterSection";
 import { ProductLogo } from "../components/home/ProductLogo";
 import { ProductSection } from "../components/home/ProductSection";
 import { PurposeSection } from "../components/home/PurposeSection";
+import { TestimonialSection } from "../components/home/TestimonialSection";
 
 export const Home = () => {
     return (
@@ -16,6 +17,7 @@ export const Home = () => {
                     <PurposeSection />
                     <FeaturesSection />
                     <ProductSection />
+                    <TestimonialSection />
                     <NewsLatterSection />
                 </div>
             </div>
