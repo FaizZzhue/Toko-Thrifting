@@ -12,7 +12,7 @@ export const ProductLogo = () => {
 
     return (
         <div className="w-full overflow-hidden container mx-auto py-20 gap-8 flex sm:flex-row flex-col sm:items-center items-start">
-            <div className="w-[300px] shrink-0 px-5 text-gray-600 border-l-4 border-primary bg-white py-2 z-10 sm:text-base text-xl font-semibold text-left">
+            <div className="w-[300px] shrink-0 px-5 text-gray-600 border-l-4 border-first bg-white py-2 z-10 sm:text-base text-xl font-semibold text-left">
                 Proud partner at <br /> Hubspot & Segment 
             </div>
 

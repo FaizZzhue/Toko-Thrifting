@@ -20,14 +20,14 @@ export const HeroSection = () => {
                 <div className="space-y-4">
                     <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
                         <span className="opacity-0 animate-fade-in"> Customer 
-                            <span className="text-primary"> Showcase </span>  
+                            <span className="text-first"> Showcase </span>  
                         </span>
                     </h1>
                     <div className="container flex items-center gap-2 w-fit px-4 py-2 rounded-full hover:bg-slate-100 transition-colors cursor-pointer animate-fade-in group">
-                        <span className="text-lg text-primary font-medium hover:text-black">
+                        <span className="text-lg text-first font-medium hover:text-black">
                             Find your dream item
                         </span>
-                        <button className="text-lg text-primary cursor-pointer hover:text-black">
+                        <button className="text-lg text-first cursor-pointer hover:text-black">
                             <FiArrowRight />
                         </button>
                     </div>
@@ -42,7 +42,7 @@ export const HeroSection = () => {
                                 placeholder="Search Product" 
                                 value={searchValue}
                                 onChange={(e) => setSearchValue(e.target.value)}
-                                className="w-full pl-10 pr-10 py-2 bg-gray-100 rounded-full focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary transition-all"
+                                className="w-full pl-10 pr-10 py-2 bg-gray-100 rounded-full focus:outline-none focus:border-first focus:ring-2 focus:ring-first transition-all"
                             /> 
                             {searchValue && (
                                 <button

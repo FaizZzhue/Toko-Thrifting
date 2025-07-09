@@ -28,7 +28,7 @@ export const Navbar = () => {
         <nav 
             className={cn(
                 "fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-sm border-b border-gray-100 shadow-sm z-50 rounded-xl", 
-                isScrolled ? "text-primary" : "text-black"
+                isScrolled ? "text-first" : "text-black"
             )}
         >
             <div className="w-full container mx-auto flex items-center justify-between px-4 sm:px-1 lg:px-2 md:h-20 h-16"> 
@@ -78,7 +78,7 @@ export const Navbar = () => {
                 </div>
 
                 {/* Button Nav */}
-                <button className="hidden md:block bg-primary text-white px-6 py-2.5 rounded-full hover:bg-link text-sm font-medium transition-all hover:shadow-[0_0_10px_rgba(234,95,16,0.5)] hover:scale-105 active:scale-95y">
+                <button className="hidden md:block bg-first text-white px-6 py-2.5 rounded-full hover:bg-link text-sm font-medium transition-all hover:shadow-[0_0_10px_rgba(234,95,16,0.5)] hover:scale-105 active:scale-95y">
                     <a href=""> Login</a>
                 </button>
 
@@ -102,7 +102,7 @@ export const Navbar = () => {
                                 {item.name}
                             </NavLink>
                         ))}
-                        <button className="w-full bg-primary text-white px-6 py-2.5 rounded-lg hover:bg-link text-sm font-medium transition-all hover:shadow-[0_0_10px_rgba(234,95,16,0.5)] hover:scale-105 active:scale-95y">
+                        <button className="w-full bg-first text-white px-6 py-2.5 rounded-lg hover:bg-link text-sm font-medium transition-all hover:shadow-[0_0_10px_rgba(234,95,16,0.5)] hover:scale-105 active:scale-95y">
                             <a href=""> Login</a>
                         </button>
                     </div>

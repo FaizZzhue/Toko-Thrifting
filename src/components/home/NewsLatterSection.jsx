@@ -8,7 +8,7 @@ export const NewsLatterSection = () => {
                 <div className="relative md:px-16 py-16 px-6 md:py-16 ">
 
                     {/* Gradient BG */}
-                    <div className="absolute top-0 right-0 w-1/2 h-full bg-primary clip-path-slant hidden md:block" />
+                    <div className="absolute top-0 right-0 w-1/2 h-full bg-first clip-path-slant hidden md:block" />
 
                     <div className="relative flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
                         {/* Left Content */}

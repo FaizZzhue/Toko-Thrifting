@@ -58,7 +58,7 @@ export const ProductSection = () => {
                     <p className="text-3xl font-bold mb-4"> 
                         Top Selling 
                         <span className="text-link"> Best </span>
-                        <span className="text-primary"> Products</span> 
+                        <span className="text-first"> Products</span> 
                     </p>
                     <p className=" text-gray-600"> Best of the best products</p>
                 </div>
