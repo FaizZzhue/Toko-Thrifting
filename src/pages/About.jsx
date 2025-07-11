@@ -1,4 +1,5 @@
 import { AboutSection } from "../components/about/AboutSection";
+import { StorySection } from "../components/about/StorySection";
 
 
 export const About = () => {
@@ -6,6 +7,7 @@ export const About = () => {
         <main>
             <div>
                 <AboutSection />
+                <StorySection />
             </div>
         </main>
     );
