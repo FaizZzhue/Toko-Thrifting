@@ -13,7 +13,7 @@ export const ProductSection = () => {
             img: Img1,
             title: "Nike Jordan",
             rating: 5.0,
-            color: "Blue Fragment",
+            color: "Blue",
             aosDelay: "0"
         },
         {
@@ -45,7 +45,7 @@ export const ProductSection = () => {
             img: Img5,
             title: "Carhartt Jacket",
             rating: 4.8,
-            color: "Blue Atlantic",
+            color: "Purple",
             aosDelay: "800"
         },
     ];
@@ -72,12 +72,12 @@ export const ProductSection = () => {
                             <img
                                 src={product.img}
                                 alt=""
-                                className="h-[200px] w-[200px] object-contain border border-link rounded-md"
+                                className="h-[200px] w-[200px] object-contain"
                             />
                             <div>
-                                <h3 className="font-semibold">{product.title}</h3>
-                                <p className="text-sm text-gray-600">{product.color}</p>
-                                <div className="flex items-center gap-1">
+                                <h3 className="font-semibold text-center">{product.title}</h3>
+                                <p className="text-sm text-gray-600 text-center">{product.color}</p>
+                                <div className="flex justify-center items-center gap-1">
                                     <FiStar className="text-yellow-400" />
                                     <span>{product.rating}</span>
                                 </div>
