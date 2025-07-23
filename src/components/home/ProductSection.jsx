@@ -50,7 +50,7 @@ export const ProductSection = () => {
         },
     ];
     return (
-        <section className="mt-14 mb-12">
+        <section className="mt-14 mb-12 h-screen flex items-center">
             <div className="container">
 
                 {/* Header */}

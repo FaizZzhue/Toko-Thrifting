@@ -19,7 +19,7 @@ export const FeaturesSection = () => {
         },
     ];
     return (
-        <section className="max-w-7xl mx-auto px-4 py-8">
+        <section className="max-w-7xl mx-auto px-4 py-8 mt-10">
 
             {/* Heading Texts */}
             <div className="text-center mb-16">
